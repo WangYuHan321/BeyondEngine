@@ -1,5 +1,18 @@
 #pragma once
-class BeyondArray
+#include "BeyondMemoryAllocator.h"
+
+namespace Beyond
 {
-};
+
+	template<class T, class SIZE>
+	class Array
+	{
+	public:
+		Array();
+		~Array();
+
+	};
+}
+
+
 

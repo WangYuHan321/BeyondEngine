@@ -20,10 +20,7 @@ namespace Beyond
 		Texture();
 		virtual ~Texture() {};
 
-
 		TextureType GetTextureType() { return m_tType; }
-
-
 
 	private:
 		UInt m_tWidth;

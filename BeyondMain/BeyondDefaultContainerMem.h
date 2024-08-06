@@ -1,7 +1,7 @@
 #pragma once
 namespace Beyond
 {
-	class BeyondDefaultContainerMem
+	class DefaultContainerMemory
 	{
 
 	};

@@ -5,10 +5,6 @@ Beyond::MemoryManager::MemoryManager()
 {
 }
 
-Beyond::MemoryManager::~MemoryManager()
-{
-}
-
 Beyond::CMemoryManager::CMemoryManager()
 {
 }

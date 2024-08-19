@@ -13,8 +13,7 @@ namespace Beyond
 
 
 	private:
-
-
+		String mName;
 
 	};
 }

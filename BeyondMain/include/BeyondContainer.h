@@ -1,9 +1,18 @@
 #pragma once
+#include <type_traits>
 #include "Beyond.h"
 #include "BeyondMemoryObject.h"
 #include "BeyondMemoryManager.h"
+
 namespace Beyond
 {
+	template<typename T> struct ValueBase
+	{
+		enum { NeedsConstructor = !std::is_constructible(T) && !std::is_pod<T>::Value };
+		enum { NeedsDestructor = !std::is_trivially_destructible(T) && !std::is_pod<T>::Value };
+	};
+
+
 	class BeyondAPI DefaultContainer
 	{
 	public:
@@ -62,7 +71,7 @@ namespace Beyond
 			}
 
 			m_MemManagerObject.Deallocate((char*)pPtr, 0, true);
-			pPtr = NULL;
+			pPtr = nullptr;
 
 		}
 

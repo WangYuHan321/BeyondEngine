@@ -26,6 +26,8 @@ namespace Beyond
 	//定义所有的基类的allocation
 	typedef AllocatedObject<> GeneralAllocatedObject;
 	typedef AllocatedObject<> RenderSysAllocatedObject;
+	typedef AllocatedObject<> RenderSysAlloc;
+	typedef AllocatedObject<> ResourceAlloc;
 
 }
 

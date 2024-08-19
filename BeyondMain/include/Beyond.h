@@ -1,5 +1,7 @@
 #pragma once
 
+#include <string>
+
 namespace Beyond
 {
 	typedef float Float;
@@ -18,6 +20,8 @@ namespace Beyond
 
 	typedef long long LLong;
 	typedef unsigned long long ULLong;
+
+	typedef std::string String;
 
 
 

@@ -8,7 +8,7 @@ namespace Beyond
 	public:
 
 		MemoryManager();
-		virtual ~MemoryManager() = 0;
+		virtual ~MemoryManager();
 
 		virtual void* Allocate(ULLong uiSize, ULLong uiAlignment, Bool bIsArray) = 0;
 		virtual void Deallocate(char* pAddr, ULLong uiAlignment, Bool bIsArray) = 0;
